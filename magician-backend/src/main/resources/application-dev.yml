@@ -1,0 +1,33 @@
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:mariadb://127.0.0.1:magician
+    username: root
+    password: root
+    hikari:
+      jdbc-url: jdbc:mariadb://127.0.0.1:3306/magician
+      username: root
+      password: root
+      maximum-pool-size: 2
+      minimum-idle: 2
+      connection-test-query: SELECT 1
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+#        use_sql_comments: true
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
+springdoc:
+  swagger-ui:
+    path: /swagger-ui-custom.html

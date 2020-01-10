@@ -1,0 +1,110 @@
+= Magician Rest Docs
+API Document
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 3
+:sectlinks:
+
+[[introduction]]
+== 소개
+
+This is Magician API Giude page
+
+[[overview-http-verbs]]
+=== HTTP verbs
+
+RESTful notes tries to adhere as closely as possible to standard HTTP and REST conventions in its
+use of HTTP verbs.
+
+|===
+| Verb | Usage
+
+| `GET`
+| get single object or list
+
+| `PUT`
+| save object
+
+| `PATCH`
+| update object
+
+| `DELETE`
+| delete object
+|===
+
+=== Domain
+
+|===
+| environment | domain
+
+| local
+| `localhost:8080`
+
+| dev
+| `tbd...`
+
+| prod
+| `tbd...`
+|===
+
+
+=== Header
+
+|===
+| name | description
+
+| `Authorization`
+| how to login user
+|===
+
+=== Common parameter
+
+|===
+| name | description
+
+| `pageable`
+| list 페이징 처리를 위한 공통 parameter로 request에서 size, page, direction은 필수값
+|===
+
+[[sample]]
+== sample API
+
+=== get sample
+Path Parameters:
+include::{snippets}/sample-controller-test/get-sample/path-parameters.adoc[]
+
+Request HTTP Example:
+include::{snippets}/sample-controller-test/get-sample/http-request.adoc[]
+
+Response Fields:
+include::{snippets}/sample-controller-test/get-sample/response-fields.adoc[]
+
+Response HTTP Example:
+include::{snippets}/sample-controller-test/get-sample/http-response.adoc[]
+
+
+=== get samples (list)
+Request Parameters:
+include::{snippets}/sample-controller-test/get-samples/request-parameters.adoc[]
+
+Request HTTP Example:
+include::{snippets}/sample-controller-test/get-samples/http-request.adoc[]
+
+Response Fields:
+include::{snippets}/sample-controller-test/get-samples/response-fields.adoc[]
+
+Response HTTP Example:
+include::{snippets}/sample-controller-test/get-samples/http-response.adoc[]
+
+
+=== save samples
+Request body:
+include::{snippets}/sample-controller-test/create-sample/request-body.adoc[]
+
+Request HTTP Example:
+include::{snippets}/sample-controller-test/create-sample/http-request.adoc[]
+
+Response HTTP Example:
+include::{snippets}/sample-controller-test/create-sample/http-response.adoc[]
