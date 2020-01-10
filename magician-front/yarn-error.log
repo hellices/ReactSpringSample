@@ -1,0 +1,35 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\ih203.hwang\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react react-dom next
+
+PATH: 
+  C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Java\jdk-13.0.1\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\TortoiseSVN\bin;C:\windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\gradle\gradle-5.6.4\bin;C:\Users\ih203.hwang\AppData\Local\Microsoft\WindowsApps;C:\Users\ih203.hwang\AppData\Roaming\npm;C:\gradle\gradle-5.6.4\bin;
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.13.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: unable to verify the first certificate
+      at TLSSocket.onConnectSecure (_tls_wrap.js:1321:34)
+      at TLSSocket.emit (events.js:210:5)
+      at TLSSocket._finishInit (_tls_wrap.js:794:8)
+      at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:608:12)
+
+npm manifest: 
+  {
+    "name": "magician-front",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
